@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home-container {
+  width: 100%;
+  height: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  background-image: url("./assets/star-wars-backgrounds-25_bc15ec98.jpeg");
+}
+
+.star-wars-logo {
+  width: 320px;
+  height: 193px;
+}
+
+.search-container {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-bottom: 0.5px solid #ffe81f;
+  color: #ffe81f;
+}
+
+.search-input {
+  width: 50%;
+  border: 1px solid white;
+  background-color: rgb(125, 27, 27);
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.filter-button {
+  width: 25%;
+  border: 0;
+  background-color: rgb(80, 80, 205);
+  padding: 10px;
+  border-radius: 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.all-ships-container {
+  width: fit-content;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 200px);
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0 auto;
+  color: #ffe81f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navlink {
+  text-decoration: none;
+}
+
+.ship-card {
+  width: 200px;
+  height: 275px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #ffe81f;
+}
+
+.ship-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.ship-info {
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.ship-info label {
+  font-size: 12px;
+}
+
+.detailed-card {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color:#ffe81f;
+  gap: 30px;
+}
+
+.detailed-card-header {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ffe81f;
+  font-size: 16px;
+}
+
+.detailed-card img {
+  width: 50%;
+  height: auto;
+}
+
+.ship-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  background-image: url("./assets/star-wars-backgrounds-25_bc15ec98.jpeg");
+}
+
+.home-button {
+  text-decoration: none;
+  position: absolute;
+  left: 25%;
+  top: 220px;
+  color:#ffe81f;
 }
